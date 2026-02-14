@@ -11,9 +11,9 @@ import warnings
 import requests
 from datetime import datetime
 
-GROQ_API_KEY = "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"
-NOTION_TOKEN = "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"
-NOTION_DATABASE_ID = "247d802e23e080499fecc25b1f4b5cb2"
+GROQ_API_KEY = "ENTER YOUR API KEY HERE "
+NOTION_TOKEN = "ENTER YOUR TOKEN KEY HERE "
+NOTION_DATABASE_ID = "ENTER YOUR DATABASE KEY HERE"
 batch_model= WhisperModel("large-v3-turbo", device="cpu", compute_type= "int8")
 small_model= WhisperModel("tiny.en", device= "cpu", compute_type="int8")
 class Ultimate():
