@@ -111,7 +111,7 @@ class Ultimate():
         print("Sending transcript to summarize!") 
         self.win.after(0, lambda: self.status_label.config(text="GENERATING SUMMARY", fg="yellow"))
         try:
-            completion = self.client.chat.completions.create(model= "meta-llama/llama-4-maverick-17b-128e-instruct", messages=[
+            completion = self.client.chat.completions.create(model= "gpt-oss-120b", messages=[
                 {
                     "role": "system",
                     "content": "You are a specialized assistant whose main purpose is to summarize the transcript exactly by taking all the major points and minor points which can be tested on for a quiz or an exam. Also give these points precisely and avoid any grammatical errors and use context from previous sentences to summarize more accuratelty. Research using the internet, to get precise points and fix any errors that may have been encountered during transcription. Expand on some important points to give an explanation to deepen understanding."
